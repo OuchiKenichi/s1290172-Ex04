@@ -1,9 +1,16 @@
 import java.util.Random;
+import java.util.Scanner;
 public class Ex04 {
     public static void main(String[] args){
 	int count1=0;
 	int count2=0;
+	Scanner sc =new Scanner(System.in);
 	Random rnd = new Random();
+	System.out.println("Who are you");
+	System.out.print("> ");
+	String name=sc.next();
+	System.out.println(name);
+	System.out.println("Hello, "+name+"!");
 	System.out.println("Tossing a coin...");
 	for(int i=1;i<=3;i++){
 	    int result=rnd.nextInt()%2;
